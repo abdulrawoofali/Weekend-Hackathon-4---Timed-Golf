@@ -63,17 +63,15 @@ class Timer extends React.Component {
 		};
 		return (
 			<>
-				{this.state.renderBall ? (
-					<>
-						<span className="heading-timer">{this.state.time}</span>
-						<div className="ball" style={style}></div>
-						<div className="hole"></div>
-					</>
-				) : (
-					<button className="start" onClick={this.handleStart}>
-						start
-					</button>
-				)}
+				<>
+					<span className="heading-timer">{this.state.time}</span>
+					<div className="ball" style={style}></div>
+					<div className="hole"></div>
+				</>
+
+				<button className="start" onClick={this.handleStart}>
+					start
+				</button>
 			</>
 		);
 	}
